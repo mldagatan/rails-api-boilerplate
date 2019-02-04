@@ -21,7 +21,6 @@ gem 'rails', '~> 5.2.2'
 group :development, :test do
   gem 'bullet'
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
-  gem 'capybara'
   gem 'factory_bot_rails'
   gem 'pry-byebug'
   gem 'pry-rails'
