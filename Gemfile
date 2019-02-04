@@ -7,6 +7,8 @@ ruby '2.4.1'
 
 gem 'aws-sdk-s3', '~> 1', require: false
 gem 'bootsnap', '>= 1.1.0', require: false
+gem 'devise'
+gem 'devise_token_auth'
 gem 'draper'
 gem 'jbuilder', '~> 2.5'
 gem 'oj'
