@@ -8,6 +8,7 @@ abort('The Rails environment is running in production mode!') if \
 
 require 'rspec/rails'
 require 'shoulda-matchers'
+require 'database_cleaner'
 
 # Add additional requires below this line. Rails is not loaded until this point!
 
