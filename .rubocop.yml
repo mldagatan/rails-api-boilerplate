@@ -1,0 +1,73 @@
+AllCops:
+  Exclude:
+    - bin/**/*
+    - vendor/**/*
+    - db/**/*
+    - node_modules/**/*
+
+Documentation:
+  Enabled: false
+
+Layout/SpaceBeforeFirstArg:
+  Exclude:
+    - app/views/api/**/**/*
+
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - spec/**/*
+
+Metrics/AbcSize:
+  Max: 15
+
+Metrics/BlockLength:
+  CountComments: false
+  Max: 25
+  Exclude:
+    - config/**/*
+    - spec/**/*
+    - app/admin/**/*
+    - spec/factories/*.rb
+
+Metrics/BlockNesting:
+  Max: 4
+
+Metrics/ClassLength:
+  CountComments: false
+  Max: 200
+
+# Avoid complex methods.
+# Metrics/CyclomaticComplexity:
+#   Max: 6
+
+Metrics/MethodLength:
+  CountComments: false
+  Max: 24
+
+Metrics/ModuleLength:
+  CountComments: false
+  Max: 200
+  Exclude:
+    - '**/*_spec.rb'
+
+Metrics/LineLength:
+  Max: 100
+  AllowURI: true
+  URISchemes:
+    - http
+    - https
+
+Metrics/ParameterLists:
+  Max: 5
+  CountKeywordArgs: true
+
+Metrics/PerceivedComplexity:
+  Max: 12
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/ModuleFunction:
+  Enabled: false
+
+Style/BlockDelimiters:
+  EnforcedStyle: braces_for_chaining
