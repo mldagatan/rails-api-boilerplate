@@ -50,7 +50,7 @@ Metrics/ModuleLength:
     - '**/*_spec.rb'
 
 Metrics/LineLength:
-  Max: 100
+  Max: 80
   AllowURI: true
   URISchemes:
     - http
