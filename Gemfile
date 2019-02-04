@@ -24,6 +24,7 @@ group :development, :test do
   gem 'bullet'
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'factory_bot_rails'
+  gem 'faker'
   gem 'pry-byebug'
   gem 'pry-rails'
   gem 'rspec-rails'
@@ -38,7 +39,6 @@ group :development do
 
   gem 'awesome_print'
   gem 'better_errors'
-  gem 'faker'
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'robocop'
   gem 'rubocop'
