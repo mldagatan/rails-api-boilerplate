@@ -1,0 +1,16 @@
+version: "3.6"
+volumes:
+  db-data:
+    external: false
+services:
+  postgres:
+    image: postgres:9.6.2
+    environment:
+      POSTGRES_USER: boilerPlate
+      POSTGRES_PASSWORD: boilerPlate
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    expose:
+      - "5432"
